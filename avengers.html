@@ -1,0 +1,219 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Movie Feaver</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#search1{
+			width:100%;
+			margin-top:20;
+		
+		}
+		#myInput{
+		width:500px;
+		display:inline;
+		padding:5px;
+		border-radius:10px 10px 10px 10px;
+		border:none;
+		border:1px solid blue;
+		font-size:17px;
+		text-align:center;
+		margin-top:30px;
+		background-repeat:no-repeat;
+		
+		}
+		#search1 input[type="text"]
+		{
+			position:absolute;
+			left:30%;
+			top:25%;
+			width:30%;
+			background-color:white;
+			color:grey;
+		}
+		#myUl{
+			position:absolute;
+			left:8%;
+			top:35%;
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			width:500px;
+		}
+		#myUl li a{
+			margin-top:-1px;
+			padding:12px;
+			text-decoration:none;
+			font-size:18px;
+			color:red;	
+			position:relative;
+			left:80%;
+			top:35%;
+			width:100%;
+			color:yellow;				
+		}
+	</style>
+</head>
+<body>
+	<div class="navSection1">
+		<div class="navsecWrapper">
+			<ul>
+				<li id="liFirst"><a href="Login.html">Login</a></li>
+				<li id="liSec"><a href="Registrationpage.html">Sign up</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="search1">
+	<input type="text" name="searchbox" id="myInput" placeholder="search here...." onkeyup="myFunction()" title="name">
+			<ul id="myUl">
+				<li><a href="Avengers-M1.html">Avengers Movie</a></li>
+				<li><a href="Avengers-M2.html">Avengers ultron</a></li>
+				<li><a href="Avengers-M3.html">Avengers infinity</a></li>
+				<li><a href="Avengers-M4.html">Avengers endgame</a></li>
+				<li><a href="HarryPotter-M1.html">HarryPotter and the philosophers stone</a></li>
+	            <li><a href="HarryPotter-M2.html">HarryPotter and the chamber of secrets</a></li>	
+				<li><a href="HarryPotter-M3.html">HarryPotter and the goblet of fire</a></li>
+				<li><a href="HarryPotter-M4.html">HarryPotter and the prisoner of azkaban</a></li>
+				<li><a href="HarryPotter-M5.html">HarryPotter and the order of phoenix</a></li>
+				<li><a href="HarryPotter-M6.html">HarryPotter and the Deathly hallows part1</a></li>
+				<li><a href="HarryPotter-M7.html">HarryPotter and the Deathly hallows part2</a></li>
+			</ul>
+	</div>
+	<script>
+		function myFunction()
+		{
+			var input,filter,ul,li,a,i,txtValue;
+			input=document.getElementById('myInput');
+			filter=input.value.toUpperCase();
+			ul=document.getElementById("myUl");
+			li=ul.getElementsByTagName("li");
+			for(i=0; i< li.length;i++)
+			{  
+				a=li[i].getElementsByTagName("a")[0];
+				txtValue=a.textContent || a.innerText;
+				if(txtValue.toUpperCase().indexOf(filter) > -1)
+				{
+					li[i].style.display = "";
+				}
+				else
+				{
+					li[i].style.display = "none";
+				}	
+			}
+		}
+	</script>
+	<div class="slideSection">
+		<div class="slideSecWrapper">
+			<div class="slideOption">
+				<div class="Movie_one">
+					<img src="Avengers-Movie.jpg" alt="Movie1" width="272px" height="408px">
+					<div class="text1">
+						<a href="Avengers-M1.html"><h3>Avengers-Movie</h3></a>
+					</div>
+				</div>
+				<div class="Movie_one">
+					<img src="avengers ultron.jpg" alt="Movie1" width="272px" height="408px">
+					<div class="text2">
+						<a href="#"><h3>Avengers-ultron</h3></a>
+					</div>
+				</div>
+				<div class="Movie_one">
+					<img src="avengers infinity war.jpg" alt="Movie1" width="272px" height="408px">
+					<div class="text3">
+						<a href="#"><h3>Avengers-infinity</h3></a>
+					</div>
+				</div>
+				<div class="Movie_one">
+					<img src="endgame.jpg" alt="Movie1" width="272px" height="408px">
+					<div class="text4">
+						<a href="#"><h3>Avengers-endgame</h3></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<center><h2>Harry Potter Series</h2><center>
+				<br></br>
+				<br></br>
+				
+				<br></br>
+				<br></br>
+	<div class="slideSection2">
+		<div class="slideSecWrapper2">
+			<div class="slideOption2">
+					<div class="Movie_one2">
+						<img src="1.png" alt="Movie1" width="272px" height="408px">
+						<div class="text5">
+							<a href="#"><h3> Harry potter and Philosopher stone</h3></a>
+						</div>
+					</div>
+					<div class="Movie_one2">
+						<img src="chamber of secrets.jpg" alt="Movie1" width="272px" height="408px">
+						<div class="text6">
+							<a href="#"><h3>Harry Potter and chamber of secrets</h3></a>
+						</div>
+					</div>
+					<div class="Movie_one2">
+						<img src="azkaban.jpg" alt="Movie1" width="272px" height="408px">
+						<div class="text7">
+							<a href="#"><h3>Harry Potter and Prisoner of Azkaban</h3></a>
+						</div>
+					</div>
+					<div class="Movie_one2">
+						<img src="order of phoenix.jpg" alt="Movie1" width="272px" height="408px">
+						<div class="text8">
+							<a href="#"><h3>Harry Potter and order of phoenix</h3></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+	<div class="slideSection2">
+		<div class="slideSecWrapper2">
+			<div class="slideOption2">
+						<div class="Movie_one2">
+							<img src="gobet of fire.png" alt="Movie1" width="272px" height="408px">
+							<div class="text8">
+								<a href="#"><h3>Harry Potter and goblet of fire</h3></a>
+							</div>
+						</div>
+						<div class="Movie_one2">
+							<img src="part1.jpg" alt="Movie1" width="272px" height="408px">
+							<div class="text9">
+								<a href="#"><h3>Harry Potter and deathly Hallows part1</h3></a>
+							</div>
+						</div>
+						<div class="Movie_one2">
+							<img src="deathly hallows2.jpg" alt="Movie1" width="272px" height="408px">
+							<div class="text10">
+								<a href="#"><h3>Harry Potter and deathly Hallows part2</h3></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	<div class="fifthSection">
+		<div class="fifthWrapper">
+			<p><center>Know More</center></p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footerWrapper">
+			<ul>
+				<li><a href="#"><b>Home</b></a></li>
+				<li><a href="#"><b>Latest News</b></a></li>
+				<li><a href="#"><b>About</b></a></li>
+				<li><a href="#"><b>Contact</b></a></li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>
