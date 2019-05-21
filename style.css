@@ -1,0 +1,271 @@
+*html{
+	font-family:arial;
+	font-weight:400;
+}
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+}
+.navsecWrapper{
+	width:100%;
+	display:inline-block;
+	line-height:40px;
+	z-index:2;
+	position:relative;
+	margin:2em 0 0 0;
+}
+.navsection1{
+	width:100%;
+	height:600px;
+	background-image:url('avengers.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.navsecWrapper > ul{
+	list-style:none;
+	display:inline;
+	float:right;
+	margin:0 10em 0 0;
+}
+.navsecWrapper > ul > li{
+	display:inline-block;
+}
+.navsecWrapper > ul > li > a{
+	text-decoration:none;
+	font-family:arial white;
+	margin:0 2em;
+}	
+#liFirst{
+	border:2px solid white;
+	border-radius:30px;
+	border-width:1px;
+	padding:0 .9em 0 .9em;
+}
+#liFirst a{
+	color:#FFFFFF;
+}
+#liSec{
+	border:2px solid white;
+	border-radius:30px;
+	border-width:1px;
+	padding:0 .9em 0 .9em;
+}
+#liSec a{
+	color:#FFFFFF;
+}
+
+.slideSection{
+	width:100%;
+}
+.slideOption{
+	width:100%;
+	display:flex;
+	background-color:black;
+	border-radius:10px;
+	margin:-9em 1.5em 1em 1.5em;
+}
+.Movie_one{
+	flex:1;
+	margin:1em 0 0 .7em;
+	position:relative;
+	width:100%;
+	margin:0 auto;
+}
+.Movie_one > a:active{
+	background-color:white;
+}
+.Movie_one > img{
+	width:250px;
+	height:340px;
+	cursor:pointer;
+}
+.SlideSection .text1{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:0;
+	left:5;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection .text2{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:0;
+	left:0;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection .text3{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection .text4{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.slideSection2{
+	width:100%;
+}
+.slideOption2{
+	width:100%;
+	display:flex;
+	top:200%;
+	background-color:black;
+	border-radius:10px;
+	margin:-9em 1.5em 1em 1.5em;
+}
+.Movie_one2{
+	flex:1;
+	margin:1em 0 0 .7em;
+	position:relative;
+	width:100%;
+	margin:0 auto;
+}
+.Movie_one2 > img{
+	width:250px;
+	height:340px;
+	cursor:pointer;
+}
+.SlideSection2 .text5{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection2 .text6{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection2 .text7{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection2 .text8{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection2 .text9{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.SlideSection2 .text10{
+	position:absolute;
+	z-index:999;
+	margin:0 auto;
+	top:200%;
+	left:1%;
+	right:0;
+	text-align:center;
+	top:70%;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial,sans-serif;
+	color:#fff;
+	width:60%;
+}
+.fifthSection{
+	width:100%;
+	margin:auto;
+}
+.fifthWrapper > p{	
+	background-color:magenta;
+	padding:1em 2em 1em 2em;
+	border-radius:5px;
+}
+.footer{
+	width:100%;
+	margin:auto;
+}
+.footerWrapper{
+	width:100%;
+	height:100px;
+	background-color:gray;
+}
+.footerWrapper > ul{
+	display:inline-block;
+	font-family:bold;
+}
