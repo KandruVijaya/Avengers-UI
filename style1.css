@@ -1,0 +1,43 @@
+body{
+	margin:0;
+	background:#262626;
+	padding:0;
+}
+.ratings{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	display:flex;
+}
+.ratings input{
+	/*display:block;*/
+}
+.ratings{
+	display:block;
+	cursor:pointer;
+	width:50px;
+	background:#ccc;
+}
+ratings label{
+	display:block;
+	cursor:pointer;
+	width:50px;
+}
+.ratings label:after{
+	content:'\f005';
+	font-family:fontAwesome;
+	position:relative;
+	display:block;
+	font-size:50px;
+	color:#1f9cff;
+	top:0;
+	opacity:0;
+	transition:.5s;
+	text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
+.ratings label:hover:after,
+.ratings input:checked label:after
+{
+		opacity:1;
+}	
