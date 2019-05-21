@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navigation search bar</title>
+	<style>
+		#myInput{
+		width:500px;
+		padding:5px;
+		border-radius:10px 10px 10px 10px;
+		border:none;
+		border:1px solid blue;
+		font-size:17px;
+		text-align:center;
+		margin-top:30px;
+		background-repeat:no-repeat;
+		}
+		#myUl{
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			width:500px;
+		}
+		#myUl li a{
+			border:1px solid #ddd;
+			margin-top:-1px;
+			padding:12px;
+			display:block;
+			background-color:#f6f6f6;
+			text-decoration:none;
+			font-size:18px;
+			color:black;			
+		}
+	</style>
+</head>
+<body>
+			<input type="text" name="searchbox" id="myInput" placeholder="search here...." onkeyup="myFunction()" title="name">
+			<ul id="myUl">
+				<li><a href="Avengers-M1.html">Avengers Movie</a></li>
+				<li><a href="">Avengers ultron</a></li>
+				<li><a href="">Avengers infinity</a></li>
+				<li><a href="">Avengers endgame</a></li>
+				<li><a href="">HarryPotter and the philosophers stone</a></li>
+	            <li><a href="">HarryPotter and the chamber of secrets</a></li>	
+				<li><a href="">HarryPotter and the goblet of fire</a></li>
+				<li><a href="">HarryPotter and the prisoner of azkaban</a></li>
+				<li><a href="">HarryPotter and the order of phoenix</a></li>
+				<li><a href="">HarryPotter and the Deathly hallows part1</a></li>
+				<li><a href="">HarryPotter and the Deathly hallows part2</a></li>
+			</ul>
+	<script>
+		function myFunction()
+		{
+			var input,filter,ul,li,a,i,txtValue;
+			input=document.getElementById('myInput');
+			filter=input.value.toUpperCase();
+			ul=document.getElementById("myUl");
+			li=ul.getElementsByTagName("li");
+			for(i=0; i< li.length;i++)
+			{  
+				a=li[i].getElementsByTagName("a")[0];
+				txtValue=a.textContent || a.innerText;
+				if(txtValue.toUpperCase().indexOf(filter) > -1)
+				{
+					li[i].style.display = "";
+				}
+				else
+				{
+					li[i].style.display = "none";
+				}	
+			}
+		}
+	</script>
+</body>
+</html>
